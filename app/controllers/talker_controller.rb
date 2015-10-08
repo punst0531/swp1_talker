@@ -15,4 +15,11 @@ class TalkerController < ApplicationController
    end
 
   end
+  
+  def destroy
+      pp = Chat.find(params[:id])
+      pp.destroy
+      redirect_to :root
+  end
+  
 end

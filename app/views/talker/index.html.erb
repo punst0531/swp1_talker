@@ -12,7 +12,8 @@
           </div>
           <div class="balloon">
             <div class="tail"></div>
-            <div class="text"><%= c.chat_content %></div>
+            <div class="text"><%= c.chat_content %></div><br>
+            <a href="/talker/<%=c.id%>" data-method="delete">삭제</a>
           </div>
          </div>
       <% else %>
@@ -23,7 +24,8 @@
           </div>
           <div class="balloon">
             <div class="tail"></div>
-            <div class="text"><%= c.chat_content %></div>
+            <div class="text"><%= c.chat_content %></div><br>
+            <a href="/talker/<%=c.id%>" data-method="delete">삭제</a>
           </div>
         </div>
       <% end %>
